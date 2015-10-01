@@ -1,0 +1,79 @@
+.mockupBase {
+  margin-top: 75px; }
+  .mockupBase ul li.selected {
+    background: #46a9d4;
+    color: #ffffff; }
+  .mockupBase ul {
+    list-style-type: none;
+    background-color: #daeef6; }
+  .mockupBase .tabs {
+    width: 100%;
+    height: 2px;
+    background-color: #46a9d4; }
+  .mockupBase li {
+    margin-right: 1.5%;
+    background-color: #daeef6;
+    width: 100%;
+    height: 50px; }
+  .mockupBase a {
+    text-decoration: none;
+    font-family: 'Avenir 35 Light';
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    padding-left: 5%;
+    line-height: 3.5;
+    color: #46a9d4; }
+  .mockupBase a:active {
+    background: #46a9d4;
+    width: 100%;
+    height: 50px;
+    color: #46a9d4; }
+  .mockupBase span {
+    padding: 0;
+    margin: 0;
+    color: #ffffff; }
+
+form {
+  margin-top: 2%;
+  font-family: 'Avenir 35 Light';
+  font-size: 16px; }
+  form .mockupMemberDetails input {
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    border-color: #46a9d4;
+    padding-left: 5%;
+    margin-bottom: 50px;
+    font-size: 14px; }
+  form .memberInfoLabel {
+    font-family: 'Avenir 65 Medium';
+    font-size: 14px; }
+  form .mockupMemberDetailsOpt input {
+    margin-bottom: 5%; }
+
+.checkbox-custom {
+  opacity: 0;
+  position: absolute; }
+
+.checkbox-custom, .checkbox-custom-label {
+  margin: 5px;
+  cursor: pointer; }
+
+.checkbox-custom + .checkbox-custom-label:before {
+  content: '';
+  background: #fff;
+  border: 2px solid #46a9d4;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px; }
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  background: #58585b; }
+
+.mockupFormTab {
+  margin-top: 3%;
+  font-family: 'Avenir 35 Light';
+  font-size: 16px; }

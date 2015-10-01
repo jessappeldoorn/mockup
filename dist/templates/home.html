@@ -1,1 +1,46 @@
-<h1>Home Page</h1>
+<div class="mockupForm">
+  <form action="demo_form.asp" method="get">
+    <div class="row">
+      <div class="mockupMemberDetails">
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="memberID">Member ID</label><br/>
+          <input type="text" name="Member ID" placeholder="12345678"/>
+        </div> <!--col-md-3-->
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="name">Name</label><br/>
+          <input type="text" placeholder="Last, First"/>
+        </div> <!--col-md-3-->
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="eligibility">Eligibility Start Date</label><br>
+          <input type="text" placeholder="MM/DD/YYYY"/>
+        </div> <!--col-md-3-->
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="InsuranceCarrier">Insurance Carrier</label><br>
+          <input type="text" value="Williamette Health Alliance"/><br>
+        </div> <!--col-md-3-->
+      </div> <!--mockupMemberDetails-->
+    </div> <!--row-->
+    <div class="mockupMemberDetailsOpt">
+      <div class="row">
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="primarycareprovider">Primary Care Provider</label><br>
+          <input id="provider1" class="checkbox-custom" name="provider1" type="checkbox" >
+          <label for="provider1" class="checkbox-custom-label">Dr. Shurt's Office</label> <br>
+          <input id="provider2" class="checkbox-custom" name="provider2" type="checkbox">
+          <label for="provider2" class="checkbox-custom-label">Rose City Clinic</label> <br>
+          <input id="provider3" class="checkbox-custom" name="provider3" type="checkbox" checked>
+          <label for="provider3"class="checkbox-custom-label">Hillsboro Northside</label>    
+        </div> <!--col-md-3-->
+        <div class="col-md-3">
+          <label class="memberInfoLabel" for="status">Status</label><br>
+          <input id="status1" class="checkbox-custom" name="status1" type="checkbox" checked>
+          <label for="status1" class="checkbox-custom-label">Eligible</label><br>
+          <input id="status2" class="checkbox-custom" name="status2" type="checkbox">
+          <label for="status2" class="checkbox-custom-label">Ineligible</label> <br>
+          <input id="status3" class="checkbox-custom" name="status3" type="checkbox" >
+          <label for="status3"class="checkbox-custom-label">Termed</label>  
+        </div> <!--col-md-3-->
+      </div> <!--row-->
+    </div> <!--mockupMemberDetailsOptions-->
+  </form>
+</div> <!--mockupForm-->

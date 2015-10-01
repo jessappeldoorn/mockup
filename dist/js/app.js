@@ -1,3 +1,37 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+  // $(document).ready(function () {
+  //     $('.mockupBase ul li a').click(function (ev) {
+  //         $('.mockupBase ul li').removeClass('selected');
+  //         $(ev.currentTarget).parent('li').addClass('selected');
+  //     });
+  // });
 
-},{}]},{},[1]);
+var app = angular.module("mockup", ["ui.router"]);
+
+ app.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
+   $locationProvider.html5Mode(true);
+
+ 
+   $stateProvider.state('home', {
+     url: '/',
+     controller: 'Main.controller',
+     templateUrl: '/templates/home.html'
+   });
+
+    $stateProvider.state('tab', {
+     url: '/tab',
+     controller: 'Main.controller',
+     templateUrl: '/templates/tab.html'
+   });
+ }]);
+
+// home controller
+app.controller('Main.controller', ['$scope', function($scope){
+
+  $(document).ready(function () {
+      $('.mockupBase ul li a').click(function (ev) {
+          $('.mockupBase ul li').removeClass('selected');
+          $(ev.currentTarget).parent('li').addClass('selected');
+      });
+  });
+
+}]);
