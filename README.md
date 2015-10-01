@@ -1,29 +1,5 @@
-Bloc Base Project
+mockup sample project
 =================
-
-A base for Bloc frontend projects.
-
-## Configuration
-
-Configuring this project should be consistent across Nitrous, Mac (local), and Vagrant.
-
-Start by cloning the repository
-
-```
-$ git clone https://github.com/Bloc/base-frontend-project.git <your-frontend-project-name>
-```
-
-The project uses Grunt to run tasks (detailed below); start by installing the Grunt Command Line Interface (`grunt-cli`) globally on your machine.
-
-```
-$ npm install -g grunt-cli
-```
-
-Once that's complete, install the remaining project dependencies by running
-
-```
-$ npm install
-```
 
 ## Grunt
 
